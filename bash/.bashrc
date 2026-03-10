@@ -53,7 +53,7 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 # General
 alias cp='cp -i'
 alias mv='mv -i'
-alias rm='trash -v' # Safety first!
+#alias rm='trash -v' # Safety first!
 alias mkdir='mkdir -p'
 alias ps='ps auxf'
 alias ping='ping -c 10'
@@ -92,10 +92,9 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias bd='cd "$OLDPWD"' # Back directory
-alias cdhomelab='cd /mnt/pool01/homelab'
-alias cdservices='cd /mnt/pool01/homelab/services'
-alias cdpool01='cd /mnt/pool01'
-alias cdmedia='cd /mnt/pool01/media'
+alias cdhomelab='cd /home/sfarhan/homelab'
+alias cdservices='cd /home/sfarhanhomelab/services'
+alias cddocssf='cd /home/sfarhan/homelab/docs-sfhomelab'
 
 # System
 alias diskspace="du -S | sort -n -r | more"
@@ -115,7 +114,7 @@ alias docker-clean=' \
   docker image prune -f ; \
   docker network prune -f ; \
   docker volume prune -f '
-alias dockerupf='docker compose up -d --force-recreate'
+alias dockerupdf='docker compose up -d --force-recreate'
 alias docker-reload-caddy='docker compose exec caddy caddy reload --config /etc/caddy/Caddyfile'
 alias dockerexec='docker exec -it' 
 
