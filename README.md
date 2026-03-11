@@ -70,19 +70,19 @@ fc-list | grep -i "meslo"
 
 Instead of copying files, can consider symlinking them.
 
-Assuming this repository is cloned to `/mnt/pool01/homelab/systems`, run the following commands:
+Assuming this repository is cloned to `/home/sfarhan/homelab/systems`, run the following commands:
 
 ```bash
 # 1. Fastfetch (Create directory if missing, then symlink chosen config)
 mkdir -p ~/.config/fastfetch
-ln -sf /mnt/pool01/homelab/systems/fastfetch/custom-config.jsonc ~/.config/fastfetch/config.jsonc
+ln -sf /home/sfarhan/homelab/systems/fastfetch/custom-config.jsonc ~/.config/fastfetch/config.jsonc
 
 # 2. Starship Prompt
-ln -sf /mnt/pool01/homelab/systems/starship/starship.toml ~/.config/starship.toml
+ln -sf /home/sfarhan/homelab/systems/starship/starship.toml ~/.config/starship.toml
 
 # 3. Bash Configuration (Backup existing first)
 mv ~/.bashrc ~/.bashrc.bak
-ln -sf /mnt/pool01/homelab/systems/bash/.bashrc ~/.bashrc
+ln -sf /home/sfarhan/homelab/systems/bash/.bashrc ~/.bashrc
 
 ```
 
@@ -93,7 +93,7 @@ If using a terminal that supports image rendering (like Kitty or Konsole), adjus
 ```json
   "logo": {
     "type": "kitty",
-    "source": "/mnt/pool01/homelab/systems/assets/customlogo.png",
+    "source": "/home/sfarhan/homelab/systems/assets/customlogo.png",
     "width": 25,
     "height": null,
     "preserveAspectRatio": true,
@@ -125,7 +125,7 @@ The default is like so, if wish to go basic:
 
 ## Bash Setup Customizations
 
-This `.bashrc` file has been heavily tailored to remove unnecessary bloat from the [original upstream source](https://github.com/ChrisTitusTech/mybash/blob/main/.bashrc), leaving behind only the functionalities and additions I personally require for my environment.
+This `.bashrc` file has been heavily tailored to remove some bloats from the [original upstream source](https://github.com/ChrisTitusTech/mybash/blob/main/.bashrc), leaving behind only the functionalities and additions I personally require for my environment.
 
 To apply changes and load:
 

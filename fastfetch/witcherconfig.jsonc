@@ -105,17 +105,17 @@
         {
       "type": "disk",
       "key": "{#separator}│  {#keys}󰋊 Homelab",
-      "folders": "/mnt/pool01/homelab"
+      "folders": "/home/sfarhan/homelab"
     },
     {
       "type": "disk",
       "key": "{#separator}│  {#keys}󰋊 Media",
-      "folders": "/mnt/pool01/media"
+      "folders": "/mnt/vault/media"
     },
     {
       "type": "disk",
       "key": "{#separator}│  {#keys}󰋊 Games",
-      "folders": "/mnt/pool01/games"
+      "folders": "/home/sfarhan/games"
     },
     {
       "type": "custom",
