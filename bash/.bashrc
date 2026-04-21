@@ -114,9 +114,9 @@ alias docker-clean=' \
   docker image prune -f ; \
   docker network prune -f ; \
   docker volume prune -f '
-alias dockerupdf='docker compose up -d --force-recreate'
-alias docker-reload-caddy='docker compose exec caddy caddy reload --config /etc/caddy/Caddyfile'
-alias dockerexec='docker exec -it' 
+alias docker-compose-up-df='docker compose up -d --force-recreate'
+alias caddy-reload='docker compose exec caddy caddy reload --config /etc/caddy/Caddyfile'
+alias docker-exec='docker exec -it' 
 
 
 # Grep -> Ripgrep (rg) if available
