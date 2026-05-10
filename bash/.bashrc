@@ -93,7 +93,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias bd='cd "$OLDPWD"' # Back directory
 alias cdhomelab='cd /home/sfarhan/homelab'
-alias cdservices='cd /home/sfarhan/homelab/services'
+alias cdcachyos-home='cd /home/sfarhan/homelab/cachyos-home'
 alias cddocssf='cd /home/sfarhan/homelab/docs-sfhomelab'
 
 # System
