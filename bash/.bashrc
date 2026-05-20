@@ -117,6 +117,9 @@ alias docker-clean=' \
 alias docker-compose-up-df='docker compose up -d --force-recreate'
 alias caddy-reload='docker compose exec caddy caddy reload --config /etc/caddy/Caddyfile'
 alias docker-exec='docker exec -it' 
+alias journal-docker-service='journalctl -u docker.service'
+alias top='top -H -d 1'
+
 
 
 # Grep -> Ripgrep (rg) if available
