@@ -119,7 +119,7 @@ alias caddy-reload='docker compose exec caddy caddy reload --config /etc/caddy/C
 alias docker-exec='docker exec -it' 
 alias journal-docker-service='journalctl -u docker.service'
 alias top='top -H -d 1'
-
+alias docker-ip="docker inspect -f '{{.Name}} | {{range \$k, \$v := .NetworkSettings.Networks}}{{\$k}}: {{\$v.IPAddress}}  {{end}}' \$(docker ps -q) | sed 's/^\///' | sort -t '|' -k 2 -V -r | column -t -s '|'"
 
 
 # Grep -> Ripgrep (rg) if available
